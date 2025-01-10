@@ -10,7 +10,7 @@ systems_mapping = {
     "deflector_shield": "SHLD-05"
 }
 
-damaged_system = "engines"  # Puedes cambiar esto o hacerlo aleatorio si prefieres
+damaged_system = "engines"  
 
 @app.route('/status', methods=['GET'])
 def status():
@@ -37,5 +37,5 @@ def teapot():
     return "I'm a teapot", 418
 
 if __name__ == '__main__':
-    # Cambiar 'debug' a False en un entorno de producción
+   
     app.run(host='0.0.0.0', port=5000, debug=True)
